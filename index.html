@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike - Just Do It</title>
+    <title>Nike - All Features and Products</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,26 +17,64 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#history">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#innovations">Innovations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#endorsements">Endorsements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#other">Other Features</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Animation -->
-    <section class="hero-section text-center py-5">
+    <!-- Hero Section with Improved Animation -->
+    <section class="hero-section text-center py-5 animated-fadeIn">
         <h1>Just Do It</h1>
-        <p>Nike is the world's leading brand for athletic shoes, clothes, and gear.</p>
-        <img src="images/nike-hero.jpg" alt="Nike shoes and products" class="img-fluid">
-        <a href="products.html" class="btn btn-primary mt-3">Shop Now</a>
+        <p>Explore everything about Nike: History, products, innovations, and more.</p>
+        <img src="images/nike-hero.jpg" alt="Nike products" class="img-fluid animated-slideIn">
+        <a href="#products" class="btn btn-primary mt-3 animated-pulse">Discover Products</a>
     </section>
 
-    <!-- About Nike Section -->
-    <section class="container my-5">
-        <h2>About Nike</h2>
-        <p>Nike was started in 1964 by Bill Bowerman and Phil Knight. They make amazing products like shoes and clothes for sports. Nike has innovations like Nike Air for cushioning and focuses on sustainability. They work with stars like Michael Jordan and Serena Williams.</p>
+    <!-- History Section -->
+    <section id="history" class="container my-5 animated-fadeInDelay">
+        <h2>History of Nike</h2>
+        <p>Nike was founded in 1964 as Blue Ribbon Sports by Bill Bowerman and Phil Knight. Rebranded in 1971, it introduced the Swoosh logo and "Just Do It" slogan in 1988. Key milestones include the first Nike shoe in 1972 and global expansion to over 190 countries with $44 billion in revenue by 2023.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="container my-5 animated-fadeInDelay">
+        <h2>Products</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Shoes</h3>
+                <p>Running (e.g., Nike Pegasus), Basketball (e.g., Air Jordan), Lifestyle (e.g., Air Force 1), and more.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Apparel and Accessories</h3>
+                <p>Hoodies, shorts, jerseys, bags, and customizable options like Nike By You.</p>
+            </div>
+        </div>
+        <img src="images/product1.jpg" alt="Nike Shoes" class="img-fluid animated-slideIn">
+    </section>
+
+    <!-- Innovations Section -->
+    <section id="innovations" class="container my-5 animated-fadeInDelay">
+        <h2>Innovations</h2>
+        <p>Nike Air for cushioning, Flyknit for lightweight design, React Foam for energy return, and sustainability efforts like Move to Zero using recycled materials.</p>
+        <img src="images/innovation1.jpg" alt="Nike Innovations" class="img-fluid animated-slideIn">
+    </section>
+
+    <!-- Endorsements Section -->
+    <section id="endorsements" class="container my-5 animated-fadeInDelay">
+        <h2>Endorsements</h2>
+        <p>Partners with athletes like Michael Jordan, LeBron James, and Serena Williams, plus teams in NBA, NFL, and Olympics.</p>
+        <img src="images/endorsement1.jpg" alt="Nike Athletes" class="img-fluid animated-slideIn">
+    </section>
+
+    <!-- Other Features Section -->
+    <section id="other" class="container my-5 animated-fadeInDelay">
+        <h2>Other Features</h2>
+        <p>Global presence with over 1,000 stores, sustainability initiatives, and apps like SNKRS for sneaker releases.</p>
     </section>
 
     <!-- Footer -->
