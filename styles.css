@@ -1,12 +1,16 @@
 :root {
-    --primary: #000; --accent: #D1001B; --text: #FFF; --background: #f8f9fa;
+    --primary: #000; /* Black */
+    --accent: #D1001B; /* Red */
+    --text: #FFF; /* White */
+    --background: #f8f9fa; /* Light gray */
+    --nike-light: #e6e6e6; /* Gray accent */
+    --nike-accent: #1a1a1a; /* Dark gray for sections */
 }
-body { font-family: 'Roboto', sans-serif; background: var(--background); color: var(--primary); font-size: 16px; }
-h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+body { font-family: 'Roboto', sans-serif; background: var(--background); color: var(--primary); }
+h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: var(--accent); }
 .hero-section { background: var(--primary); color: var(--text); }
-.card { background: var(--text); border-radius: 10px; }
-.btn-primary { background: var(--accent); }
-.btn-success { background: var(--accent); border: none; }
-.btn:hover { opacity: 0.8; }
-.animated-slideIn { animation: slideIn 1s; }
-@keyframes slideIn { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.bg-nike-accent { background: var(--nike-accent); color: var(--text); }
+.bg-nike-light { background: var(--nike-light); }
+.btn-nike { background: var(--accent); color: var(--text); border: none; }
+.btn-nike:hover { opacity: 0.8; }
+.card { border: none; border-radius: 10px; }
