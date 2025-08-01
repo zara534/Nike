@@ -1,19 +1,73 @@
+/* Define Nike-inspired colors as variables for easy use */
+:root {
+    --primary-color: #000000;  /* Black */
+    --secondary-color: #FFFFFF;  /* White */
+    --accent-color: #D1001B;  /* Red */
+    --background-color: #f8f9fa;  /* Light gray for sections */
+}
+
+/* Set nice fonts for the whole site */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;  /* Clean, readable font for body */
+    background-color: var(--background-color);
+    font-size: 16px;  /* Base size for better readability */
+    color: var(--primary-color);  /* Black text for contrast */
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;  /* Bold, modern font for headings */
 }
 
 .hero-section {
-    background-color: #000;
-    color: white;
+    background-color: var(--primary-color);  /* Black background */
+    color: var(--secondary-color);  /* White text */
     padding: 50px 0;
 }
 
-h1 {
-    animation: fadeIn 2s;  /* This makes the text fade in slowly */
+.card {
+    background-color: var(--secondary-color);  /* White cards for a clean UI */
+    border: none;  /* Remove default borders for a modern look */
+    border-radius: 10px;  /* Rounded corners for UX appeal */
+}
+
+.btn-primary {
+    background-color: var(--accent-color);  /* Red buttons */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--accent-color), 10%);  /* Darker red on hover for interactivity */
+}
+
+/* Keep animations as they are, but ensure they fit the new design */
+.animated-fadeIn {
+    animation: fadeIn 1.5s ease-in;
+}
+
+.animated-fadeInDelay {
+    animation: fadeIn 1.5s ease-in 0.5s;
+}
+
+.animated-slideIn {
+    animation: slideIn 1s ease-in;
+}
+
+.animated-pulse {
+    animation: pulse 2s infinite;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }  /* Start invisible */
-    to { opacity: 1; }    /* End visible */
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
