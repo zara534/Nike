@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike - All Features and Products</title>
+    <title>Nike - Just Do It</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">  <!-- AOS for CapCut-like animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Nike</a>
+            <a class="navbar-brand" href="#"><img src="images/nike-logo.png" alt="Nike Logo" width="50"> Nike</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,98 +22,74 @@
                     <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#innovations">Innovations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#endorsements">Endorsements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#other">Other Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#choose-nike">Why Choose Nike</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with enhanced animation -->
-    <section class="hero-section text-center py-5" data-aos="fade-in">  <!-- Fades in like a video transition -->
+    <section class="hero-section text-center py-5" data-aos="fade-in">
         <h1 class="display-4">Just Do It</h1>
-        <p class="lead">Explore everything about Nike: History, products, innovations, and more.</p>
-        <img src="images/nike-hero.jpg" alt="Nike products" class="img-fluid rounded animated-slideIn mt-3" data-aos="zoom-in">  <!-- Zooms in for a dynamic effect -->
-        <a href="#products" class="btn btn-primary mt-4 animated-pulse" data-aos="fade-up">Discover Products</a>
+        <p class="lead">Empower your potential with Nike's innovative gear.</p>
+        <img src="images/nike-hero.jpg" alt="Nike products" class="img-fluid rounded" data-aos="zoom-in">
+        <a href="#choose-nike" class="btn btn-primary mt-4" data-aos="fade-up">Shop Now</a>
     </section>
 
-    <!-- History Section -->
-    <section id="history" class="container my-5" data-aos="fade-up">  <!-- Slides up as you scroll -->
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card p-4 shadow-sm">
-                    <h2 class="card-title">History of Nike</h2>
-                    <p class="card-text">Nike was founded in 1964 as Blue Ribbon Sports by Bill Bowerman and Phil Knight. Rebranded in 1971, it introduced the Swoosh logo and "Just Do It" slogan in 1988. Key milestones include the first Nike shoe in 1972 and global expansion to over 190 countries with $44 billion in revenue by 2023.</p>
-                </div>
-            </div>
+    <section id="history" class="container my-5" data-aos="fade-up">
+        <div class="card p-4 shadow-sm">
+            <h2>History of Nike</h2>
+            <p>Nike was founded in 1964 and has grown into a global leader with the Swoosh logo and "Just Do It" slogan.</p>
         </div>
     </section>
 
-    <!-- Products Section -->
     <section id="products" class="container my-5" data-aos="fade-up">
         <h2>Products</h2>
         <div class="row">
-            <div class="col-md-6 mb-4" data-aos="fade-right">  <!-- Fades from the right -->
-                <div class="card p-4 shadow-sm">
-                    <h3 class="card-title">Shoes</h3>
-                    <p class="card-text">Running (e.g., Nike Pegasus), Basketball (e.g., Air Jordan), Lifestyle (e.g., Air Force 1), and more.</p>
-                    <img src="images/product1.jpg" alt="Nike Shoes" class="img-fluid rounded animated-slideIn">
+            <div class="col-md-6" data-aos="fade-right">
+                <div class="card p-4">
+                    <img src="images/product1.jpg" alt="Nike Shoes" class="img-fluid rounded">
+                    <h3>Shoes</h3>
+                    <p>Explore running, basketball, and lifestyle shoes.</p>
                 </div>
             </div>
-            <div class="col-md-6 mb-4" data-aos="fade-left">  <!-- Fades from the left -->
-                <div class="card p-4 shadow-sm">
-                    <h3 class="card-title">Apparel and Accessories</h3>
-                    <p class="card-text">Hoodies, shorts, jerseys, bags, and customizable options like Nike By You.</p>
-                    <img src="images/product2.jpg" alt="Nike Apparel" class="img-fluid rounded animated-slideIn">
+            <div class="col-md-6" data-aos="fade-left">
+                <div class="card p-4">
+                    <img src="images/product2.jpg" alt="Nike Apparel" class="img-fluid rounded">
+                    <h3>Apparel</h3>
+                    <p>High-performance clothing and accessories.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Innovations Section -->
     <section id="innovations" class="container my-5" data-aos="fade-up">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card p-4 shadow-sm">
-                    <h2 class="card-title">Innovations</h2>
-                    <p class="card-text">Nike Air for cushioning, Flyknit for lightweight design, React Foam for energy return, and sustainability efforts like Move to Zero using recycled materials.</p>
-                    <img src="images/innovation1.jpg" alt="Nike Innovations" class="img-fluid rounded animated-slideIn">
-                </div>
-            </div>
+        <div class="card p-4">
+            <h2>Innovations</h2>
+            <p>Nike Air, Flyknit, and sustainability efforts like Move to Zero.</p>
+            <img src="images/innovation1.jpg" alt="Nike Innovations" class="img-fluid rounded" data-aos="zoom-in">
         </div>
     </section>
 
-    <!-- Endorsements Section -->
     <section id="endorsements" class="container my-5" data-aos="fade-up">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card p-4 shadow-sm">
-                    <h2 class="card-title">Endorsements</h2>
-                    <p class="card-text">Partners with athletes like Michael Jordan, LeBron James, and Serena Williams, plus teams in NBA, NFL, and Olympics.</p>
-                    <img src="images/endorsement1.jpg" alt="Nike Athletes" class="img-fluid rounded animated-slideIn">
-                </div>
-            </div>
+        <div class="card p-4">
+            <h2>Endorsements</h2>
+            <p>Partners with stars like Michael Jordan and Serena Williams.</p>
+            <img src="images/endorsement1.jpg" alt="Nike Athletes" class="img-fluid rounded" data-aos="slide-up">
         </div>
     </section>
 
-    <!-- Other Features Section -->
-    <section id="other" class="container my-5" data-aos="fade-up">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card p-4 shadow-sm">
-                    <h2 class="card-title">Other Features</h2>
-                    <p class="card-text">Global presence with over 1,000 stores, sustainability initiatives, and apps like SNKRS for sneaker releases.</p>
-                </div>
-            </div>
-        </div>
+    <section id="choose-nike" class="container my-5" data-aos="fade-up">
+        <h2>Why Choose Nike?</h2>
+        <p>Testimonials: "Nike gear changed my game!" – Athlete. Shop now for empowerment.</p>
+        <a href="https://www.nike.com" class="btn btn-success" data-aos="fade-up">Join the Movement</a>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-black text-white text-center py-3">
-        <p>&copy; 2023 My Nike Website. For official info, visit nike.com.</p>
+        <p>&copy; 2023 Nike Site</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  <!-- AOS script -->
-    <script src="script.js"></script>  <!-- Initialize AOS in your script.js file -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
